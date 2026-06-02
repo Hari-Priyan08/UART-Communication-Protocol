@@ -32,3 +32,20 @@ sim/
 
 - Verilog HDL
 - Xilinx Vivado 2018.2
+
+## Module Description
+
+### baudrate_gen
+Generates the baud rate clock used for UART transmission and reception.
+
+### transmitter_tx
+Serializes parallel data and transmits it over the UART TX line.
+
+### receiver_rx
+Receives serial UART data and reconstructs the original parallel data.
+
+### uart_top
+Top-level module integrating baud rate generator, transmitter, and receiver.
+
+### uart_top_tb
+Testbench used to verify UART functionality through simulation.

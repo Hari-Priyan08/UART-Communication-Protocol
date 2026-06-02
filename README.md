@@ -1,29 +1,34 @@
 # UART Communication Protocol
 
-## Overview
-This project implements UART communication in Verilog HDL using Xilinx Vivado.
+UART Transmitter and Receiver implementation in Verilog HDL using Xilinx Vivado.
 
-## Modules
+## Project Structure
 
-- uart_top
-- baudrate_gen
-- transmitter_tx
-- receiver_rx
+rtl/
+- baudrate_gen.v
+- transmitter_tx.v
+- receiver_rx.v
+- uart_top.v
 
-## Simulation
+sim/
+- uart_top_tb.v
 
-A complete testbench is provided:
+## Features
 
-- uart_top_tb
+- UART Transmission
+- UART Reception
+- Baud Rate Generator
+- Simulation Verified
+
+## Simulation Waveform
+
+![Waveform](waveform.png.png)
+
+## RTL Schematic
+
+![Schematic](schematic.png.png)
 
 ## Tools Used
 
 - Verilog HDL
 - Xilinx Vivado 2018.2
-
-## Features
-
-- UART Transmission
-- UART Receiver
-- Baud Rate Generator
-- Simulation Verified
